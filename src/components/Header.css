@@ -1,0 +1,19 @@
+.animate-bg-slider {
+  animation: bgSlide 20s infinite;
+  filter: blur(3px) brightness(70%);
+}
+
+@keyframes bgSlide {
+  0% {
+    background-image: url('/fried-chicken-with-mushrooms-rice.jpg');
+  }
+  33% {
+    background-image: url('/top-view-meals-tasty-yummy-different-pastries-dishes-brown-surface.jpg');
+  }
+  66% {
+    background-image: url('/well-done-steak-homemade-potatoes.jpg');
+  }
+  100% {
+    background-image: url('/top-view-chicken-salad-with-vegetables-greens-dark-desk-diet-salad-health.jpg');
+  }
+}
