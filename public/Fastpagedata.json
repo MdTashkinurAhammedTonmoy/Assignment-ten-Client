@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1f92e7d4-cc21-4c5a-9c25-91e45b7bf101",
+    "title": "Quinoa and Black Bean Bowl",
+    "category": "Main Dish",
+    "author": "Zera Rehbein",
+    "date": "26 Jan 2024",
+    "rating": 5,
+    "image": "https://th.bing.com/th/id/OIP.9KwWqhhppOon5eQA8HqigAHaHa?w=198&h=198&c=7&r=0&o=7&pid=1.7&rm=3",
+    "description": "Conubia eget ut quis auctor nostra ad orci nibh lacinia suspendisse odio viverra porttitor interdum."
+  },
+  {
+    "id": "d3f1cbb7-1b7e-4c70-8ac4-4fd8b156a0f3",
+    "title": "Vegetarian Stir-Fry with Tofu",
+    "category": "Main Dish",
+    "author": "Zera Rehbein",
+    "date": "26 Jan 2024",
+    "rating": 5,
+    "image": "https://th.bing.com/th/id/OIP.4tpRcZn1MVHnEUVvOnPVRQHaLH?w=198&h=297&c=7&r=0&o=7&pid=1.7&rm=3",
+    "description": "Conubia eget ut quis auctor nostra ad orci nibh lacinia suspendisse odio viverra porttitor interdum."
+  },
+  {
+    "id": "e0cedae2-2a31-4890-8cdf-6adf148e69f2",
+    "title": "Avocado and Chickpea Salad",
+    "category": "Main Dish",
+    "author": "Zera Rehbein",
+    "date": "26 Jan 2024",
+    "rating": 5,
+    "image": "https://th.bing.com/th/id/OIP.tnT3tsh_YEhz0AK48eHoSwHaHa?w=198&h=198&c=7&r=0&o=7&pid=1.7&rm=3",
+    "description": "Conubia eget ut quis auctor nostra ad orci nibh lacinia suspendisse odio viverra porttitor interdum."
+  },
+  {
+    "id": "b61b8a2f-cbc3-4ad8-a49d-59eda884db0a",
+    "title": "Mango and Kale Smoothie",
+    "category": "Main Dish",
+    "author": "Zera Rehbein",
+    "date": "26 Jan 2024",
+    "rating": 5,
+    "image": "https://th.bing.com/th/id/OIP.lnJqV1QNyRqP_ftQYastrwHaLG?w=198&h=363&c=7&r=0&o=7&pid=1.7&rm=3",
+    "description": "Conubia eget ut quis auctor nostra ad orci nibh lacinia suspendisse odio viverra porttitor interdum."
+  },
+  {
+    "id": "64da988e-eae8-48ce-8f8f-931a872f0157",
+    "title": "Grilled Salmon with Quinoa Salad",
+    "category": "Main Dish",
+    "author": "Zera Rehbein",
+    "date": "26 Jan 2024",
+    "rating": 5,
+    "image": "https://th.bing.com/th/id/OIP.TWWJPznz3837ygndUUyF-QHaLJ?w=198&h=298&c=7&r=0&o=7&pid=1.7&rm=3",
+    "description": "Conubia eget ut quis auctor nostra ad orci nibh lacinia suspendisse odio viverra porttitor interdum."
+  },
+  {
+    "id": "8cf0a8b6-83f5-4dc5-b8f4-dfbca5b05e89",
+    "title": "Baked Chicken Breast with Roasted Vegetables",
+    "category": "Main Dish",
+    "author": "Zera Rehbein",
+    "date": "26 Jan 2024",
+    "rating": 5,
+    "image": "https://th.bing.com/th/id/OIP.tZumvqBulRdRyynTQxrisgHaLH?w=198&h=297&c=7&r=0&o=7&pid=1.7&rm=3",
+    "description": "Conubia eget ut quis auctor nostra ad orci nibh lacinia suspendisse odio viverra porttitor interdum."
+  }
+]

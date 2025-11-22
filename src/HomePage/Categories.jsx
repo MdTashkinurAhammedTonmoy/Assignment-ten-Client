@@ -6,8 +6,8 @@ import img4 from "../assets/img-4.jpg";
 
 const Categories = () => {
   return (
-    <div className="p-6">
-      <h2 className="text-3xl font-bold mb-6 text-center">
+    <div className="p-6 mt-10 mb-10">
+      <h2 className="text-3xl font-bold  text-center mb-8">
         Popular Categories
       </h2>
 

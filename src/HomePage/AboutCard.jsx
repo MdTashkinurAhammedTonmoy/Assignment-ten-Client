@@ -3,48 +3,43 @@ import cookingImg from "../assets/cooking.jpg";
 
 const AboutCard = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-[#faf7f3] to-[#f3f0eb] py-24 px-6 mt-5">
+    <div className="w-full bg-[#faf7f3] py-24 px-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
         {/* LEFT SIDE */}
         <div className="relative">
 
-          {/* Glassmorphism Quote Card */}
-          <div className="
-            relative w-[85%] mb-8 p-10 rounded-2xl 
-            bg-white/10 backdrop-blur-xl shadow-xl
-            border border-white/30 
-            overflow-hidden
-          ">
-
-            {/* Glass highlight overlay */}
-            <div className="absolute inset-0 bg-gradient-to-br  from-white/40 to-transparent opacity-20"></div>
-
-            <div className="relative z-10 ">
-              <div className="text-center text-yellow-500 text-5xl mb-3">“</div>
-
-              <p className="text-center text-gray-800 font-semibold text-lg leading-relaxed mb-2">
-                “Ask not what you can do for your country. Ask what’s for lunch.”
-              </p>
-
-              <p className="text-center text-gray-600 text-sm">
-                — Orson Welles
-              </p>
-            </div>
-          </div>
-
           {/* Image */}
-          <div className="overflow-hidden relative rounded-xl shadow-lg group cursor-pointer">
+          <div className="overflow-hidden rounded-xl shadow-lg">
             <img
               src={cookingImg}
               alt="Cooking Together"
-              className="rounded-xl group-hover:scale-[1.03] transition-transform duration-500"
+              className="rounded-xl w-full h-auto"
             />
+          </div>
+
+          {/* White Testimonial Card (Overlap on image) */}
+          <div
+            className="
+              absolute -top-14 left-8
+              w-[75%] bg-white shadow-xl rounded-xl 
+              p-10 border border-gray-200
+            "
+          >
+            <div className="text-center text-yellow-500 text-5xl mb-3">“</div>
+
+            <p className="text-center text-gray-800 font-semibold text-lg leading-relaxed mb-2">
+              “Ask not what you can do for your country. Ask what’s for lunch.”
+            </p>
+
+            <p className="text-center text-gray-500 text-sm">
+              — Orson Welles
+            </p>
           </div>
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="px-4">
+        <div>
           <p className="text-sm tracking-wider text-red-600 mb-3 font-semibold">
             WHO WE ARE
           </p>
