@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import bgimg from "../assets/well-done-steak-homemade-potatoes.jpg";
 import image1 from "../assets/fried-chicken-with-mushrooms-rice.jpg";
 import image2 from "../assets/top-view-chicken-salad-with-vegetables-greens-dark-desk-diet-salad-health.jpg";
@@ -6,26 +8,34 @@ import image3 from "../assets/top-view-meals-tasty-yummy-different-pastries-dish
 import image4 from "../assets/tortilla-wraps-with-meat-fresh-vegetables.jpg";
 
 export default function PopularCategories() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   const categories = [
     {
       title: "Main Dish",
       image: image1,
       button: "Discover recipes",
+      aos: "fade-right", // left theke fade-in
     },
     {
       title: "Appetizers",
       image: image2,
       button: "Discover recipes",
+      aos: "fade-up", // bottom theke fade-in
     },
     {
       title: "Drink Recipes",
       image: image3,
       button: "Discover recipes",
+      aos: "fade-down", // top theke fade-in
     },
     {
       title: "Breakfast",
       image: image4,
       button: "Discover recipes",
+      aos: "fade-left", // right theke fade-in
     },
   ];
 
@@ -36,7 +46,6 @@ export default function PopularCategories() {
         className="relative w-full bg-cover bg-center py-24 text-center"
         style={{ backgroundImage: `url(${bgimg})` }}
       >
-        {/* Overlay Dark Layer (optional, matches screenshot style better) */}
         <div className="absolute inset-0 bg-black/40"></div>
 
         <div className="relative z-10">
@@ -52,8 +61,9 @@ export default function PopularCategories() {
       {/* Round Category Cards */}
       <div className="container mx-auto -mt-20 flex flex-wrap justify-center gap-12 relative z-20">
         {categories.map((cat, index) => (
-          <div key={index} className="flex flex-col items-center">
-            <div className="w-56 h-56 rounded-full overflow-hidden border-8 border-white shadow-2xl bg-white">
+          <div key={index} className="flex flex-col items-center" data-aos={cat.aos}>
+            <div className="w-56 h-56 rounded-full overflow-hidden border-8 border-white shadow-2xl bg-white
+                            transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
               <img src={cat.image} alt={cat.title} className="w-full h-full object-cover" />
             </div>
             <h3 className="text-lg font-semibold mt-4">{cat.title}</h3>

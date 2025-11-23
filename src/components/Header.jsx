@@ -1,19 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Header.css";
 
 const Header = () => {
-  return (
-    <div className="relative w-full h-[500px] flex items-center justify-center overflow-hidden">
+  // AOS init
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // Animation 1 সেকেন্ডে হবে
+  }, []);
 
-      {/* Background Slideshow (Blur + Dim already in CSS) */}
+  return (
+    <div data-aos="fade-right" className="relative animate-[fadeIn_1.2s_ease-in-out] w-full h-[500px] flex justify-center items-center overflow-hidden">
+
+      {/* Background Slideshow */}
       <div className="absolute inset-0 bg-cover bg-center animate-bg-slider"></div>
 
-      {/* Content Box with Soft Blur Texture */}
-      <div className="
-        relative z-10 max-w-3xl text-center 
-        rounded-lg p-10 shadow-xl border border-white/10
-        bg-black/30 backdrop-blur-md
-      ">
+      {/* Content Box */}
+      <div
+        data-aos="fade-left" // AOS animation: left theke fade
+        className="
+          relative z-10 max-w-3xl 
+          text-left md:text-left sm:text-center
+          rounded-lg p-10 shadow-xl border border-white/10
+          bg-black/30 backdrop-blur-md
+          ml-10 md:ml-10 sm:ml-0
+        "
+      >
 
         {/* Texture Overlay */}
         <div 

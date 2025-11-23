@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaStar } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function SixRecipes({ sixData }) {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   const { title, category, author, date, rating, image, description } = sixData;
 
   return (
-    <div className="bg-white rounded-xl shadow-md p-7 mx-auto  overflow-hidden">
+    <div
+      data-aos="fade-right" // left থেকে আসার animation
+      className="bg-white rounded-xl shadow-md p-7 mx-auto overflow-hidden
+                 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
+    >
       {/* Image */}
       <img src={image} alt={title} className="w-full h-48 object-cover" />
 
