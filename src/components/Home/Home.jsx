@@ -5,6 +5,8 @@ import AboutCard from '../../HomePage/AboutCard';
 import PopularCategories from '../../HomePage/PopularCategories';
 import RecipesFastpage from '../../HomePage/RecipesFastpage';
 import { useLoaderData } from 'react-router';
+import TestimonialSection from '../../HomePage/TestimonialSection';
+import FounderSection from '../../HomePage/FounderSection';
 
 const Home = () => {
     const data = useLoaderData();
@@ -15,6 +17,8 @@ const Home = () => {
             <AboutCard></AboutCard>
             <PopularCategories></PopularCategories>
             <RecipesFastpage data={data}></RecipesFastpage>
+            <TestimonialSection></TestimonialSection>
+            <FounderSection></FounderSection>
         </div>
     );
 };

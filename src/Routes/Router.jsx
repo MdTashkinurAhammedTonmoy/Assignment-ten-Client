@@ -1,6 +1,12 @@
 import { createBrowserRouter } from "react-router";
 import HomeLayout from "../layouts/HomeLayout";
 import Home from "../components/Home/Home";
+import Login from "../pages/Login";
+import Register from "../pages/Register";
+import AuthLayout from "../layouts/AuthLayout";
+import AllFood from "../HomePage/AllFood";
+import PrivateRoute from "../provider/PrivateRoute";
+import Loading from "../pages/Loading";
 
 const router = createBrowserRouter([
   {
@@ -11,17 +17,32 @@ const router = createBrowserRouter([
             index:true,
             path:"/",
             loader:() => fetch('/Fastpagedata.json'),
-            Component:Home
+            Component:Home,
+            hydrateFallbackElement:<Loading></Loading>
         },
     ]
   },
   {
     path: "/auth",
-    element: <div>authentication layout</div>,
+    element: <AuthLayout></AuthLayout>,
+    children:[
+      {
+        path:"/auth/login",
+        element:<Login></Login>
+      },
+      {
+        path:"/auth/register",
+        element:<Register></Register>
+      },
+    ]
   },
   {
-    path: "/news",
-    element: <div>News Layout</div>,
+    path: "/allfood",
+    element: (
+      <PrivateRoute>
+        <AllFood></AllFood>
+      </PrivateRoute>
+    ),
   },
 ]);
 

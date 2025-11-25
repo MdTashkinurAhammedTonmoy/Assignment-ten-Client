@@ -5,6 +5,7 @@ import img1 from "../assets/img-1.jpg";
 import img2 from "../assets/img-2.jpg";
 import img3 from "../assets/img-3.jpg";
 import img4 from "../assets/img-4.jpg";
+import { Link } from "react-router";
 
 const Categories = () => {
   // AOS init
@@ -27,9 +28,9 @@ const Categories = () => {
           style={{ backgroundImage: `url(${img1})` }}
         >
           <h2 className="text-xl">Main Dish</h2>
-          <button className="bg-yellow-400 hover:bg-yellow-800 text-black font-semibold w-[250px] px-3 py-1 mt-2 rounded-md">
+          <Link to="/allfood" className="bg-yellow-400 hover:bg-yellow-800 text-black font-semibold w-[250px] px-3 py-1 mt-2 rounded-md">
             All Recipes
-          </button>
+          </Link>
         </div>
 
         {/* 2️⃣ Top থেকে আসবে */}
@@ -39,9 +40,9 @@ const Categories = () => {
           style={{ backgroundImage: `url(${img2})` }}
         >
           <h2 className="text-xl">Appetizers</h2>
-          <button className="bg-yellow-400 hover:bg-yellow-800 text-black font-semibold w-[250px] px-3 py-1 mt-2 rounded-md">
+          <Link to="/allfood" className="bg-yellow-400 hover:bg-yellow-800 text-black font-semibold w-[250px] px-3 py-1 mt-2 rounded-md">
             All Recipes
-          </button>
+          </Link>
         </div>
 
         {/* 3️⃣ Bottom থেকে আসবে */}
@@ -51,9 +52,9 @@ const Categories = () => {
           style={{ backgroundImage: `url(${img3})` }}
         >
           <h2 className="text-xl">Drink Recipes</h2>
-          <button className="bg-yellow-400 hover:bg-yellow-800 text-black font-semibold w-[250px] px-3 py-1 mt-2 rounded-md">
+          <Link to="/allfood" className="bg-yellow-400 hover:bg-yellow-800 text-black font-semibold w-[250px] px-3 py-1 mt-2 rounded-md">
             All Recipes
-          </button>
+          </Link>
         </div>
 
         {/* 4️⃣ Left থেকে আসবে */}
@@ -63,9 +64,9 @@ const Categories = () => {
           style={{ backgroundImage: `url(${img4})` }}
         >
           <h2 className="text-xl">Breakfast</h2>
-          <button className="bg-yellow-400 hover:bg-yellow-800 text-black font-semibold w-[250px] px-3 py-1 mt-2 rounded-md">
+          <Link to="/allfood" className="bg-yellow-400 hover:bg-yellow-800 text-black font-semibold w-[250px] px-3 py-1 mt-2 rounded-md">
             All Recipes
-          </button>
+          </Link>
         </div>
 
       </div>
