@@ -1,20 +1,28 @@
 import React from "react";
+import { FaFacebook } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const FooterSection = () => {
   return (
-    <footer className="bg-[#e04916] text-white py-10">
+    <footer className="bg-[#faf7f3] text-black py-10">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
         <div>
           <h2 className="text-2xl font-bold mb-2 flex items-center gap-2">
-            <span role="img" aria-label="chef">👨‍🍳</span> yumma
+            <span role="img" aria-label="chef">
+              👨‍🍳
+            </span>{" "}
+            Food Lover
           </h2>
-          <p className="text-sm text-gray-100">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
+          <p className="text-sm text-gray-500">
+            Odio finibus sapien velit blandit aliquam tristique erat enim dis
+            fringilla. Dui volutpat letius iaculis a at cras si.
           </p>
         </div>
         <div>
           <h3 className="font-semibold mb-4">Categories</h3>
-          <ul className="space-y-2 text-sm text-gray-100">
+          <ul className="space-y-2 text-sm text-gray-500">
             <li>➜ Breakfast Recipes</li>
             <li>➜ Lunch Recipes</li>
             <li>➜ Dinner Recipes</li>
@@ -25,7 +33,7 @@ const FooterSection = () => {
         </div>
         <div>
           <h3 className="font-semibold mb-4">Learn More</h3>
-          <ul className="space-y-2 text-sm text-gray-100">
+          <ul className="space-y-2 text-sm text-gray-500">
             <li>➜ About us</li>
             <li>➜ Team</li>
             <li>➜ Careers</li>
@@ -35,14 +43,18 @@ const FooterSection = () => {
         </div>
         <div>
           <h3 className="font-semibold mb-4">Get in connect</h3>
-          <p className="text-sm mb-3 text-gray-100">Follow Us</p>
+          <p className="text-sm mb-3 font-semibold text-gray-500">Follow Us</p>
           <div className="flex gap-4 text-xl">
-            <span>📘</span>
-            <span>🐦</span>
-            <span>📸</span>
-            <span>▶️</span>
+            <span>
+              <a href=""><FaFacebook /></a>
+            </span>
+            <span><a href=""><FaSquareXTwitter /></a></span>
+            <span><a href=""><FaInstagramSquare /></a></span>
+            <span><a href=""><FaLinkedin /></a></span>
           </div>
-          <button className="mt-5 bg-white text-[#e04916] px-5 py-2 rounded">Contact Us</button>
+          <button className="bg-yellow-400 hover:bg-yellow-800 text-black font-semibold w-[150px] px-3 py-1 mt-2 rounded-md">
+            Contact Us
+          </button>
         </div>
       </div>
     </footer>

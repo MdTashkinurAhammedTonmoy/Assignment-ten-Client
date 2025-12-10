@@ -41,7 +41,7 @@ export default function PopularCategories() {
 
   return (
     <section className="w-full bg-gray-50 pb-20">
-      {/* Header Background Section */}
+      
       <div
         className="relative w-full bg-cover bg-center py-24 text-center"
         style={{ backgroundImage: `url(${bgimg})` }}
@@ -58,7 +58,7 @@ export default function PopularCategories() {
         </div>
       </div>
 
-      {/* Round Category Cards */}
+     
       <div className="container mx-auto -mt-20 flex flex-wrap justify-center gap-12 relative z-20">
         {categories.map((cat, index) => (
           <div key={index} className="flex flex-col items-center" data-aos={cat.aos}>

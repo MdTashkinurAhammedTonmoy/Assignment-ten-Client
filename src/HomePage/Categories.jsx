@@ -21,7 +21,7 @@ const Categories = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-        {/* 1️⃣ Right থেকে আসবে */}
+    
         <div
           data-aos="fade-right"
           className="h-[200px] flex flex-col justify-end p-4 text-center rounded-full text-white font-bold bg-cover bg-center transition-all duration-500 hover:brightness-75 items-center"
@@ -33,7 +33,7 @@ const Categories = () => {
           </Link>
         </div>
 
-        {/* 2️⃣ Top থেকে আসবে */}
+        
         <div
           data-aos="fade-down"
           className="h-[200px] flex flex-col justify-end p-4 text-center rounded-full text-white font-bold bg-cover bg-center transition-all duration-500 hover:brightness-75 items-center"
@@ -45,7 +45,7 @@ const Categories = () => {
           </Link>
         </div>
 
-        {/* 3️⃣ Bottom থেকে আসবে */}
+   
         <div
           data-aos="fade-up"
           className="h-[200px] flex flex-col justify-end p-4 text-center rounded-full text-white font-bold bg-cover bg-center transition-all duration-500 hover:brightness-75 items-center"
@@ -57,7 +57,7 @@ const Categories = () => {
           </Link>
         </div>
 
-        {/* 4️⃣ Left থেকে আসবে */}
+        
         <div
           data-aos="fade-left"
           className="h-[200px] flex flex-col justify-end p-4 text-center rounded-full text-white font-bold bg-cover bg-center transition-all duration-500 hover:brightness-75 items-center"

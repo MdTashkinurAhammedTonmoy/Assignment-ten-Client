@@ -12,7 +12,7 @@ export default function SixRecipes({ sixData }) {
 
   return (
     <div
-      data-aos="fade-right" // left থেকে আসার animation
+      data-aos="fade-right" 
       className="bg-white rounded-xl shadow-md p-7 mx-auto overflow-hidden
                  transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
     >
@@ -20,7 +20,7 @@ export default function SixRecipes({ sixData }) {
       <img src={image} alt={title} className="w-full h-48 object-cover" />
 
       <div className="p-4">
-        {/* Category + Rating */}
+        
         <div className="flex justify-between items-center text-sm text-gray-500 mb-2">
           <span>{category}</span>
           <div className="flex">
@@ -34,20 +34,20 @@ export default function SixRecipes({ sixData }) {
           </div>
         </div>
 
-        {/* Title */}
+
         <h3 className="text-lg font-semibold mb-1">{title}</h3>
 
-        {/* Author & Date */}
+       
         <p className="text-xs text-gray-500 mb-3">
           {author} <span className="mx-1">|</span> {date}
         </p>
 
-        {/* Description */}
+     
         <p className="text-sm text-gray-600 mb-4">
           {description.slice(0, 80)}...
         </p>
 
-        {/* Button */}
+     
         <button className="text-red-600 font-medium hover:underline">
           Read more
         </button>

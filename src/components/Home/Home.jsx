@@ -7,6 +7,8 @@ import RecipesFastpage from '../../HomePage/RecipesFastpage';
 import { useLoaderData } from 'react-router';
 import TestimonialSection from '../../HomePage/TestimonialSection';
 import FounderSection from '../../HomePage/FounderSection';
+import Coverage from '../../HomePage/Coverage';
+import NewsletterSection from '../../HomePage/NewsletterSection';
 
 const Home = () => {
     const data = useLoaderData();
@@ -19,6 +21,8 @@ const Home = () => {
             <RecipesFastpage data={data}></RecipesFastpage>
             <TestimonialSection></TestimonialSection>
             <FounderSection></FounderSection>
+            <Coverage></Coverage>
+            <NewsletterSection></NewsletterSection>
         </div>
     );
 };

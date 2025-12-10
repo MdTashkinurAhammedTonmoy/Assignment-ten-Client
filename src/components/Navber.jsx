@@ -136,7 +136,7 @@ const Navber = () => {
           </div>
           <div className="flex items-center">
             <img className="h-16 w-16" src={logo} alt="" />
-            <a className="btn hidden lg:inline-flex btn-ghost text-xl">PET CARE</a>
+            <a className="btn hidden lg:inline-flex btn-ghost text-xl">Food Lover</a>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
