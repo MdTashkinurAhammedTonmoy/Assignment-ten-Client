@@ -7,6 +7,9 @@ import AuthLayout from "../layouts/AuthLayout";
 import AllFood from "../HomePage/AllFood";
 import PrivateRoute from "../provider/PrivateRoute";
 import Loading from "../pages/Loading";
+import ModelCard from "../outside/ModelCard";
+import AddModelForm from "../outside/AddModelForm ";
+import ModelDetails from "../outside/ModelDetails";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +22,28 @@ const router = createBrowserRouter([
             loader:() => fetch('/Fastpagedata.json'),
             Component:Home,
             hydrateFallbackElement:<Loading></Loading>
+        },
+        {
+          path:"/all-product",
+          element:<AllFood></AllFood>,
+          loader:() => fetch('http://localhost:3000/foods')
+        },
+        {
+          path:"/addmodel",
+          element: (
+            <PrivateRoute>
+              <AddModelForm></AddModelForm>
+            </PrivateRoute>
+          ),
+        },
+        {
+          path:"/model-details/:id",
+          element:(
+            <PrivateRoute>
+              <ModelDetails></ModelDetails>
+            </PrivateRoute>
+          ),
+          loader:({params}) => fetch(`http://localhost:3000/foods/${params.id}`)
         },
     ]
   },

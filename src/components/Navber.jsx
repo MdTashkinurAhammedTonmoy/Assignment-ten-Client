@@ -97,10 +97,10 @@ const Navber = () => {
         <NavLink to="/">Home</NavLink>
       </li>
       <li className="font-bold">
-        <NavLink to="/prodect">All Product</NavLink>
+        <NavLink to="/all-product">All Product</NavLink>
       </li>
       <li className="font-bold">
-        <NavLink to="/profile">My Profile</NavLink>
+        <NavLink to="/addmodel">Add Model</NavLink>
       </li>
     </>
   );
