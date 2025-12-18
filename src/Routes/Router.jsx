@@ -10,6 +10,7 @@ import Loading from "../pages/Loading";
 import ModelCard from "../outside/ModelCard";
 import AddModelForm from "../outside/AddModelForm ";
 import ModelDetails from "../outside/ModelDetails";
+import UpdateModel from "../outside/UpdateModel";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,15 @@ const router = createBrowserRouter([
           ),
           loader:({params}) => fetch(`http://localhost:3000/foods/${params.id}`)
         },
+        {
+          path:"/update-model/:id",
+          element:(
+            <PrivateRoute>
+              <UpdateModel></UpdateModel>
+            </PrivateRoute>
+          ),
+          loader:({params}) => fetch(`http://localhost:3000/foods/${params.id}`)
+        }
     ]
   },
   {
