@@ -6,6 +6,7 @@ import image1 from "../assets/fried-chicken-with-mushrooms-rice.jpg";
 import image2 from "../assets/top-view-chicken-salad-with-vegetables-greens-dark-desk-diet-salad-health.jpg";
 import image3 from "../assets/top-view-meals-tasty-yummy-different-pastries-dishes-brown-surface.jpg";
 import image4 from "../assets/tortilla-wraps-with-meat-fresh-vegetables.jpg";
+import { Link } from "react-router";
 
 export default function PopularCategories() {
   useEffect(() => {
@@ -67,9 +68,9 @@ export default function PopularCategories() {
               <img src={cat.image} alt={cat.title} className="w-full h-full object-cover" />
             </div>
             <h3 className="text-lg font-semibold mt-4">{cat.title}</h3>
-            <button className="bg-yellow-400 hover:bg-yellow-800 text-black font-semibold px-6 py-2 rounded-md">
+            <Link to="/all-product" className="bg-yellow-400 hover:bg-yellow-800 text-black font-semibold px-6 py-2 rounded-md">
               {cat.button}
-            </button>
+            </Link>
           </div>
         ))}
       </div>

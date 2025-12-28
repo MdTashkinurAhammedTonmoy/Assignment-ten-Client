@@ -61,7 +61,7 @@ const ModelCard = ({ model }) => {
         </p>
 
         {/* Author */}
-        <p className="text-sm text-gray-500 mt-1">Reviewed by: {userEmail}</p>
+        <p className="text-sm text-yellow-500 mt-1">Reviewed by: {userEmail}</p>
 
         {/* Description */}
         <p className="text-gray-500 text-sm mt-3 flex-1">

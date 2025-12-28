@@ -11,6 +11,8 @@ import ModelCard from "../outside/ModelCard";
 import AddModelForm from "../outside/AddModelForm ";
 import ModelDetails from "../outside/ModelDetails";
 import UpdateModel from "../outside/UpdateModel";
+import MyModels from "../outside/MyModels";
+import MyDownloads from "../outside/MyDownloads";
 
 const router = createBrowserRouter([
   {
@@ -26,7 +28,11 @@ const router = createBrowserRouter([
         },
         {
           path:"/all-product",
-          element:<AllFood></AllFood>,
+          element:(
+            <PrivateRoute>
+              <AllFood></AllFood>
+            </PrivateRoute>
+          ),
           loader:() => fetch('http://localhost:3000/foods')
         },
         {
@@ -38,13 +44,28 @@ const router = createBrowserRouter([
           ),
         },
         {
+          path:"/my-models",
+          element:(
+            <PrivateRoute>
+              <MyModels></MyModels>
+            </PrivateRoute>
+          )
+        },
+       {
+          path:"/my-downloads",
+          element:(
+            <PrivateRoute>
+              <MyDownloads></MyDownloads>
+            </PrivateRoute>
+          )
+        },
+        {
           path:"/model-details/:id",
           element:(
             <PrivateRoute>
               <ModelDetails></ModelDetails>
             </PrivateRoute>
           ),
-          loader:({params}) => fetch(`http://localhost:3000/foods/${params.id}`)
         },
         {
           path:"/update-model/:id",

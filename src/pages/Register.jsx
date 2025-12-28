@@ -113,8 +113,8 @@ const Register = () => {
       .then((result) => {
         const createdUser = result.user;
         toast.success("Profile updated and user set:");
-
-        updateUser(createdUser, { displayName: name, photoURL: photo })
+        console.log(photo)
+        updateUser( { displayName: name, photoURL: photo })
           .then(() => {
             
             const updated = {
