@@ -4,6 +4,7 @@ import { useLoaderData } from "react-router";
 
 const UpdateModel = () => {
   const data = useLoaderData();
+  console.log("LOADER DATA:", data);
   const model = data.result;
 
   const [formData, setFormData] = useState({
@@ -159,3 +160,7 @@ const UpdateModel = () => {
 };
 
 export default UpdateModel;
+
+
+
+
